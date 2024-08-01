@@ -20,7 +20,22 @@
     border: solid black 1px;
     height: 100px;
     background-color: #658265;
+    display: grid;
+    
     /* add 7 segment display font*/
+}
+
+#storage {
+    display: grid;
+    justify-items: right;   
+    align-items: center;
+    padding-right: 20px;
+}
+#result {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: x-large;
 }
 .numpad {
     background-color: blue;

@@ -1,23 +1,26 @@
 <div class="calcBody"> <!-- This is the container for the calculator as the whole-->
   <h1 class="title">Calculator</h1>
-  <div class="display" >{{displayedDigits}}</div>
+  <div class="display" >
+    <span id="storage">{{storage}}</span>
+    <span id="result">{{displayedDigits}}</span>
+  </div>
   <div class="numpad"> <!-- This div will contain 0-9 digits, arithmetic operators, and clear btns-->
     <div class="number" id="one" (click)="setProperty($event)">1</div> <!-- This worked, kinda, when you press the one button, it creates a new display instead of just showing the value in the current dispaly.-->
-    <div class="number" id="two" (input)="setProperty($event)">2</div>
-    <div class="number" id="three" (input)="setProperty($event)">3</div>
-    <div class="number" id="four" (input)="setProperty($event)">4</div>
-    <div class="number" id="five" (input)="setProperty($event)">5</div>
-    <div class="number" id="six" (input)="setProperty($event)">6</div>
-    <div class="number" id="seven" (input)="setProperty($event)">7</div>
-    <div class="number" id="eight" (input)="setProperty($event)">8</div>
-    <div class="number" id="nine" (input)="setProperty($event)">9</div>
-    <div class="number" id="zero" (input)="setProperty($event)">0</div>
-    <div class="number" id="minus" (input)="setProperty($event)">-</div>
-    <div class="number" id="plus" (input)="setProperty($event)">+</div>
-    <div class="number" id="multiply" (input)="setProperty($event)">x</div>
-    <div class="number" id="divide" (input)="setProperty($event)">/</div>
-    <div class="number" id="equals" (input)="setProperty($event)">=</div>
-    <div class="number" id="clear" (input)="setProperty($event)">AC</div>
+    <div class="number" id="two" (click)="setProperty($event)">2</div>
+    <div class="number" id="three" (click)="setProperty($event)">3</div>
+    <div class="number" id="four" (click)="setProperty($event)">4</div>
+    <div class="number" id="five" (click)="setProperty($event)">5</div>
+    <div class="number" id="six" (click)="setProperty($event)">6</div>
+    <div class="number" id="seven" (click)="setProperty($event)">7</div>
+    <div class="number" id="eight" (click)="setProperty($event)">8</div>
+    <div class="number" id="nine" (click)="setProperty($event)">9</div>
+    <div class="number" id="zero" (click)="setProperty($event)">0</div>
+    <div class="number" id="minus" (click)="setProperty($event)">-</div>
+    <div class="number" id="plus" (click)="setProperty($event)">+</div>
+    <div class="number" id="multiply" (click)="setProperty($event)">*</div>
+    <div class="number" id="divide" (click)="setProperty($event)">/</div>
+    <div class="number" id="equals" (click)="setProperty($event)">=</div>
+    <div class="number" id="clear" (click)="setProperty($event)">C</div>
 
 
 
