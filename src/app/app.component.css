@@ -1,0 +1,117 @@
+.calcBody {
+    border: black  solid 1px;
+    height: 500px;
+    width: 400px;
+    margin-left: 20em;
+    margin-right: 20em;
+    border-radius: 1em;
+    
+}
+
+.title {
+    display: grid;
+    justify-items: center;
+    height: auto;
+    width: 100%;
+    border: solid red;
+}
+
+.display {
+    border: solid black 1px;
+    height: 100px;
+    background-color: #658265;
+    /* add 7 segment display font*/
+}
+.numpad {
+    background-color: blue;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 10px;
+}
+
+.number {
+    background-color: gray;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+   
+    
+}
+
+.number:hover {
+    background-color: darkgrey;
+}
+
+.number#one {
+    grid-column: 1;
+    grid-row: 1;
+}
+.number#two {
+    grid-column: 2;
+    grid-row: 1;
+}
+.number#three {
+    grid-column: 3/3;
+    grid-row: 1;
+}
+.number#four {
+    grid-column: 1;
+    grid-row: 2;
+}
+.number#five {
+    grid-column: 2/3;
+    grid-row: 2;
+}
+.number#six {
+    grid-column: 3/3;
+    grid-row: 2;
+}
+.number#seven {
+    grid-column: 1;
+    grid-row: 3;
+}
+.number#eight {
+    grid-column: 2;
+    grid-row: 3;
+}
+.number#nine {
+    grid-column: 3;
+    grid-row: 3;
+}
+#zero {
+    grid-column: 2/3;
+    grid-row: 4;
+}
+
+#minus {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+#plus {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+#multiply {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#divide {
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#equals {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+#clear {
+    grid-column: 1;
+    grid-row: 4;
+}
