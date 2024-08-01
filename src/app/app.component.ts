@@ -22,7 +22,7 @@ export class AppComponent {
   Num8Input: number = 8;
   Num9Input: number = 9;
   Num0Input: number = 0;
-  displayedDigits: number[] = [0];
+  displayedDigits: string = '0';
 /*      REMOVE COMMENT IF THE NEXT ATTEMPT DOESN'T WORK
   setProperty(event: Event){
     let target = event.target as HTMLInputElement
@@ -41,7 +41,7 @@ setProperty(event: Event) {
   const buttonValue = (event.target as HTMLButtonElement).textContent;
   if (buttonValue){
     const digit = parseInt(buttonValue, 10);
-    this.displayedDigits.push(digit);
+    this.displayedDigits += digit.toString();
   }
 }
 }

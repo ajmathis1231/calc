@@ -1,8 +1,8 @@
 <div class="calcBody"> <!-- This is the container for the calculator as the whole-->
   <h1 class="title">Calculator</h1>
-  <div class="display" *ngFor="let digits of displayedDigits">{{digits}}</div>
+  <div class="display" >{{displayedDigits}}</div>
   <div class="numpad"> <!-- This div will contain 0-9 digits, arithmetic operators, and clear btns-->
-    <div class="number" id="one" (click)="setProperty($event)">1</div>
+    <div class="number" id="one" (click)="setProperty($event)">1</div> <!-- This worked, kinda, when you press the one button, it creates a new display instead of just showing the value in the current dispaly.-->
     <div class="number" id="two" (input)="setProperty($event)">2</div>
     <div class="number" id="three" (input)="setProperty($event)">3</div>
     <div class="number" id="four" (input)="setProperty($event)">4</div>
